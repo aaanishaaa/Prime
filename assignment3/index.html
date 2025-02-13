@@ -8,35 +8,35 @@
 <body>
     <div style="font-size: 1.2rem;padding:2rem;">
         <h1>Registration Form</h1>
-        <form>
+        <form action="thankyou.html">
             <div>
-            <label>Name: </label><input type="text" required><br><br>
-            <label>Email: </label><input type="email" required><br><br>
-            <label>Password: </label><input type="password" required><br><br>
+            <label for="name">Name: </label><input type="text" required name="name"><br><br>
+            <label for="email">Email: </label><input type="email" required name="email"><br><br>
+            <label for="pass">Password: </label><input type="password" required name="pass"><br><br>
             </div>
             <div>
             <label>Gender:</label>
             <input type="radio" name="male">
-            <label>Male</label>
+            <label for="male">Male</label>
             <input type="radio" name="female">
-            <label>Female</label>
-            <input type="radio" name="Other">
-            <label>Other</label>
+            <label for="female">Female</label>
+            <input type="radio" name="other">
+            <label for="other">Other</label>
             </div>
             <br>
             <div>
             <label>Hobbies:</label><br>
-            <input type="checkbox">
-            <label>Reading</label>
+            <input type="checkbox" name="read">
+            <label for="read">Reading</label>
             <br>
-            <input type="checkbox">
-            <label>Travelling</label>
+            <input type="checkbox" name="travel">
+            <label for="travel">Travelling</label>
             <br>
-            <input type="checkbox">
-            <label>Cooking</label>
+            <input type="checkbox" name="cooking">
+            <label for="cooking">Cooking</label>
             <br>
-            <input type="checkbox">
-            <label>Sports</label>
+            <input type="checkbox" name="sports">
+            <label for="sports">Sports</label>
             </div>
             <br>
             <div>
@@ -65,7 +65,7 @@
                 <textarea id="address" name="address" placeholder="Enter your address" rows="8" cols="50"></textarea>
             </div>
             <br>
-            <button type="button">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </div>
 </body>
