@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div style="font-size: 1.2rem;padding:2rem;">
+        <h1>Registration Form</h1>
+        <form>
+            <div>
+            <label>Name: </label><input type="text" required><br><br>
+            <label>Email: </label><input type="email" required><br><br>
+            <label>Password: </label><input type="password" required><br><br>
+            </div>
+            <div>
+            <label>Gender:</label>
+            <input type="radio" name="male">
+            <label>Male</label>
+            <input type="radio" name="female">
+            <label>Female</label>
+            <input type="radio" name="Other">
+            <label>Other</label>
+            </div>
+            <br>
+            <div>
+            <label>Hobbies:</label><br>
+            <input type="checkbox">
+            <label>Reading</label>
+            <br>
+            <input type="checkbox">
+            <label>Travelling</label>
+            <br>
+            <input type="checkbox">
+            <label>Cooking</label>
+            <br>
+            <input type="checkbox">
+            <label>Sports</label>
+            </div>
+            <br>
+            <div>
+            <label>City:</label>
+            <select>
+                <option value="UttarPradesh">Uttar Pradesh</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+            </select>
+            </div>
+            <br>
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <br>
+            <div>
+                <label for="phoneno">Phone Number:</label>
+                <input type="tel" id="phoneno" name="phoneno">
+            </div>
+            <br>
+            <div>
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address"></textarea>
+            </div>
+            <br>
+            <button type="button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
