@@ -14,4 +14,8 @@ console.log(obj[key]);
 //deleting a key value pair
 delete obj.city;
 console.log(obj);
-
+// update value
+obj.age=50;
+console.log(obj);
+// check if a key exists
+console.log("city" in obj);
