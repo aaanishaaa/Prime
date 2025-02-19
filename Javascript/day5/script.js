@@ -22,9 +22,6 @@ const outerdiv=document.querySelector("div");
 outerdiv.style.backgroundColor='blue';
 outerdiv.style.padding='10px';
 outerdiv.style.color='blue';
-for(let i=0;i<outerdiv.children.length;i++){
-    outerdiv.children[i].style.backgroundColor='yellow';
-}
 
 const mapping={
     Invitation:"You are invited for the event",
@@ -40,3 +37,28 @@ Array.from(outerdiv.children).forEach((child) => {
         child.children[1].innerHTML = mapping[key];
     }
 });
+
+const newele=document.createElement('div');
+const rootele=document.querySelector('body');
+newele.innerHTML='<h4>Anniversary</h4>';
+newele.innerHTML+='<p>Happy Anniversary</p>';
+outerdiv.appendChild(newele);  
+
+console.log(Object.entries(mapping));
+
+Object.entries(mapping).forEach((ele)=>{
+    const key=ele[0];
+    const value=ele[1];
+    const newChildDiv=document.createElement("div");
+    newChildDiv.innerHTML=`
+    <h4 style="color:blue;">${key}</h4>
+    <p>${value}</p>
+    `;
+    outerdiv.append(newChildDiv);
+});
+
+
+
+for(let i=0;i<outerdiv.children.length;i++){
+    outerdiv.children[i].style.backgroundColor='yellow';
+}  
