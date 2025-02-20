@@ -1,0 +1,31 @@
+body{
+    background-color: #7bb9d2;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#parent{
+    display: flex;
+}
+.card{
+    color: white;
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 100%;
+    background-color: #262249;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+}
+.deleteCard{
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.784);
+}
+.changeT{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.784);
+}
