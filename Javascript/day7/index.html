@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form onsubmit="handleFormSubmit(event)">
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <input type="text" id="email" placeholder="Enter your email" required>
+        <input type="text" id="city" placeholder="Enter your city" required>
+        <input type="text" id="age" placeholder="Enter your age" required>
+        <button type="submit" id="add">Add</button>
+    </form>
+    <select onchange="HandleSelect(event)">
+        <!-- <option value="Select">Select</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Noida">Noida</option>
+        <option value="Mumbai">Mumbai</option> -->
+    </select>
+    <div id="root"></div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

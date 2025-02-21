@@ -59,4 +59,27 @@ changeT.forEach((card, index) => {
         }
     });
     card.appendChild(changeTitleButton);
+}); 
+
+const filterSelect = document.createElement('select');
+filterSelect.className = 'filter';
+const uniqueCities = [...new Set(array.map(item => item.city))];
+uniqueCities.forEach(city => {
+    const option = document.createElement('option');
+    option.value = city;
+    option.innerText = city;
+    filterSelect.appendChild(option);
 });
+filterSelect.addEventListener('change', () => {
+    const filterValue = filterSelect.value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        const city = card.querySelector('.text').innerText.toLowerCase();
+        if (city.includes(filterValue)) {
+            card.style.display = '';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+});
+root.insertBefore(filterSelect, root.firstChild);

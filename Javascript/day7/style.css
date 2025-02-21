@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgb(255, 253, 243);
+}
+body{
+    padding: 1rem;
+    text-align: center;
+}
+.card{
+    width: 400px;
+    background-color: rgb(154, 101, 170);
+    border-radius: .75rem;
+    margin: 1rem auto;
+    padding: 1rem;
+ }
+#root{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+select{
+    width: 190px;
+    height: 40px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 0px;
+    box-shadow: 2px;
+    background-color: rgb(46, 0, 60);
+    color: rgb(255, 255, 255);
+ }
+
+form{
+    background-color: rgb(154, 101, 170);
+    padding: 2rem;
+    margin: 2rem;
+}
+#name,#email,#city,#age{
+    background-color: rgb(255, 237, 231);
+    padding: 10px;
+}
+#add{
+    padding: 10px;
+    margin: 10px;
+    color: rgb(78, 78, 78);
+    background-color: crimson;
+}
+
+.content{
+    background-color: rgb(154, 101, 170);
+}
