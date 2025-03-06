@@ -1,0 +1,12 @@
+.card{
+    margin: 2rem auto;
+    max-width: 300px;
+    text-align: center;
+    background-color: cadetblue;
+    padding: 1rem;
+    border-radius: 5px;
+    border: dotted 3px wheat;
+}
+body{
+    background-color: rgb(80, 80, 80);
+}
